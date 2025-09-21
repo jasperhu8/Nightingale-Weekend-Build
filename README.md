@@ -30,7 +30,7 @@ This repository is organized into separate branches for clarity of deliverables:
   Contains experimental work with synthetic data and a complaint classifier:  
   - `data/synthetic_consults.jsonl` (synthetic patient transcripts)  
   - `data/disease_labels.yaml` (patient-friendly disease categories with keywords)  
-  - `app/classifier.py` (rule-based classifier with two stages: mapping patient complaints to a standard terminology library, and aligning patient complaints with clinician prescriptions to infer disease category)  
+  - `data/classifier.py` (rule-based classifier with two stages: mapping patient complaints to a standard terminology library, and aligning patient complaints with clinician prescriptions to infer disease category)  
   **This branch is not linked to the main app/test framework, but illustrates extended directions reviewers can explore.**
 
 ---
