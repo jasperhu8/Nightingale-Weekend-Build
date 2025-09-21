@@ -26,7 +26,7 @@ This repository is organized into separate branches for clarity of deliverables:
   - `test_latency.py` (profiles pipeline latency with P50/P95)  
   - `test_summary.py` (compares clinician vs. patient summary templates)
 
-- **feature/data-classifier branch**  
+- **data-classifier branch**  
   Contains experimental work with synthetic data and a complaint classifier:  
   - `data/synthetic_consults.jsonl` (synthetic patient transcripts)  
   - `data/disease_labels.yaml` (patient-friendly disease categories with keywords)  
