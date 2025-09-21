@@ -3,7 +3,7 @@
 This branch contains the written deliverables for the Nightingale Weekend Build.
 
 ## Contents
-- **brief.md**  
+- **Brief.md**  
   A 2–3 page write-up including:
   - Objectives & assumptions  
   - Architecture / workflow  
