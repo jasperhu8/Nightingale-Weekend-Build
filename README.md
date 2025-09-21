@@ -26,6 +26,13 @@ This repository is organized into separate branches for clarity of deliverables:
   - `test_latency.py` (profiles pipeline latency with P50/P95)  
   - `test_summary.py` (compares clinician vs. patient summary templates)
 
+- **feature/data-classifier branch**  
+  Contains experimental work with synthetic data and a complaint classifier:  
+  - `data/synthetic_consults.jsonl` (synthetic patient transcripts)  
+  - `data/disease_labels.json` (patient-friendly disease categories with keywords)  
+  - `app/classifier.py` (rule-based classifier with two stages: mapping patient complaints to a standard terminology library, and aligning patient complaints with clinician prescriptions to infer disease category)  
+  **This branch is not linked to the main app/test framework, but illustrates extended directions reviewers can explore.**
+
 ---
 Due to the limited build time, the focus is on **ideas and product fit** rather than fully implemented systems.  
 Below is the design rationale.
