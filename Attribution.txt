@@ -1,0 +1,12 @@
+This project uses the following external resources:
+
+Python Standard Library (built-in, PSF License):
+- re
+- typing
+- time
+
+Third-party testing framework:
+- pytest (MIT License, https://docs.pytest.org)
+
+No external pretrained models or datasets were used.
+All synthetic transcripts and PHI samples were manually created for demonstration purposes.
