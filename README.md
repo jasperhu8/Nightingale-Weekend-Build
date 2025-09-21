@@ -11,23 +11,6 @@ This branch contains the **classification pipeline** for transforming raw patien
    - Takes the standardized text and maps it into ICD-11 categories.  
    - Example: *Respiratory system disorders* → Code `12`.
 
----
-
-## Example Run
-
-Command:
-
-```bash
-python data-classifier/classifier.py "I've had a fever and cough for three days."
-
-=== Stage-1: Standardization ===
-ID:   RESP_ACUTE
-Text: Acute cough with fever and yellow sputum (~3 days)
-
-=== Stage-2: ICD-11 ===
-Suggested: 12 — Diseases of the respiratory system
-Effective: 12 — Diseases of the respiratory system
-```
 ## Purpose of This Branch
 
 - **`synthetic_consults.jsonl`**  
@@ -54,3 +37,21 @@ This branch simulates how the system will:
 - Help clinicians by reducing paperwork (complaints come pre-standardized).  
 - Provide patients with consistent, clear labels for their conditions.  
 - Enable future research and reminders by storing ICD-11 codes alongside clinical text.  
+
+---
+
+## Example Run
+
+Command:
+
+```bash
+python data-classifier/classifier.py "I've had a fever and cough for three days."
+
+=== Stage-1: Standardization ===
+ID:   RESP_ACUTE
+Text: Acute cough with fever and yellow sputum (~3 days)
+
+=== Stage-2: ICD-11 ===
+Suggested: 12 — Diseases of the respiratory system
+Effective: 12 — Diseases of the respiratory system
+```
