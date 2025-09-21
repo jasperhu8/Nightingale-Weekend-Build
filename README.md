@@ -1,6 +1,32 @@
 # Nightingale-Weekend-Build
 
 This repository contains a conceptual prototype for a VoiceAI system designed to improve the patient–clinician experience across three stages: **Pre-care**, **During-care**, and **Post-care**.  
+## Repository Structure
+
+This repository is organized into separate branches for clarity of deliverables:
+
+- **main branch**  
+  Contains the high-level documentation and overview, including this `README.md`.  
+  Focus: design rationale, deliverable coordination, and entry point for the build.
+
+- **docx branch**  
+  Includes the written deliverables:  
+  - `Brief.md` (2–3 page project rationale: objectives, assumptions, architecture, key decisions)  
+  - `Attribution.txt` (libraries, models, and licenses)
+
+- **app branch**  
+  Contains the minimal demo application code:  
+  - `demo.py` (core implementation)  
+  - `redaction.py`, `logger.py`, `provenance.py`, `summarize.py`, `pipeline.py`, `__init__.py` (thin wrappers for modular imports)
+
+- **test branch**  
+  Holds the four micro-tests proving quality and user-centric design:  
+  - `test_grounding.py` (ensures all summary bullets have provenance anchors)  
+  - `test_redaction.py` (verifies synthetic PHI is fully redacted)  
+  - `test_latency.py` (profiles pipeline latency with P50/P95)  
+  - `test_summary.py` (compares clinician vs. patient summary templates)
+
+---
 Due to the limited build time, the focus is on **ideas and product fit** rather than fully implemented systems.  
 Below is the design rationale.
 
