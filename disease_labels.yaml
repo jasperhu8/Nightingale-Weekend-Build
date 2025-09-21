@@ -1,0 +1,176 @@
+# ===============================
+# Disease Label Dataset
+# ===============================
+# Based on ICD-11 (International Classification of Diseases, 11th Revision).
+# ICD-11 provides a global standard for coding diseases and health conditions,
+# supporting health recording, statistics, and large-scale research.
+# Adopted by the World Health Assembly in 2019, effective from 2022.
+
+dataset:
+  train_file: "data/synthetic_consults.jsonl"
+  format: "jsonl"
+  description: "Synthetic dataset for patient complaint classification aligned with ICD-11 categories."
+
+labels:
+  "01":
+    name: "Certain infectious or parasitic diseases"
+    description: "Diseases caused by bacteria, viruses, fungi, or parasites. Examples: malaria, tuberculosis, HIV/AIDS."
+    keywords: ["infection", "parasite", "malaria", "HIV", "tuberculosis"]
+
+  "02":
+    name: "Neoplasms"
+    description: "Benign and malignant tumors and cancers affecting various organs. Examples: breast cancer, lung cancer, leukemia."
+    keywords: ["cancer", "tumor", "leukemia", "malignant", "benign"]
+
+  "03":
+    name: "Diseases of the blood or blood-forming organs"
+    description: "Conditions that affect blood cells, production, and clotting. Examples: anemia, hemophilia, clotting disorders."
+    keywords: ["anemia", "blood disorder", "hemophilia", "clotting"]
+
+  "04":
+    name: "Diseases of the immune system"
+    description: "Disorders of immune deficiency and autoimmunity. Examples: lupus, rheumatoid arthritis, immunodeficiency."
+    keywords: ["immune", "autoimmune", "lupus", "rheumatoid arthritis"]
+
+  "05":
+    name: "Endocrine, nutritional or metabolic diseases"
+    description: "Hormonal and metabolic conditions such as diabetes, thyroid disorders, obesity, and malnutrition."
+    keywords: ["diabetes", "thyroid", "obesity", "malnutrition"]
+
+  "06":
+    name: "Mental, behavioural or neurodevelopmental disorders"
+    description: "Mental health conditions including depression, anxiety, schizophrenia, ADHD, and autism spectrum disorders."
+    keywords: ["depression", "anxiety", "schizophrenia", "autism", "ADHD"]
+
+  "07":
+    name: "Sleep-wake disorders"
+    description: "Problems with sleep quality, timing, or duration. Examples: insomnia, narcolepsy, sleep apnea."
+    keywords: ["insomnia", "narcolepsy", "sleep apnea", "sleep disorder"]
+
+  "08":
+    name: "Diseases of the nervous system"
+    description: "Neurological disorders such as epilepsy, Parkinson’s disease, Alzheimer’s disease, and multiple sclerosis."
+    keywords: ["epilepsy", "Parkinson", "Alzheimer", "multiple sclerosis"]
+
+  "09":
+    name: "Diseases of the visual system"
+    description: "Disorders of the eyes and vision. Examples: cataract, glaucoma, blindness."
+    keywords: ["cataract", "glaucoma", "blindness", "vision loss"]
+
+  "10":
+    name: "Diseases of the ear or mastoid process"
+    description: "Hearing and ear-related disorders. Examples: hearing loss, otitis media, tinnitus."
+    keywords: ["hearing loss", "ear infection", "tinnitus", "otitis"]
+
+  "11":
+    name: "Diseases of the circulatory system"
+    description: "Cardiovascular conditions including hypertension, heart disease, and stroke."
+    keywords: ["heart disease", "stroke", "hypertension", "cardiac"]
+
+  "12":
+    name: "Diseases of the respiratory system"
+    description: "Respiratory disorders such as asthma, pneumonia, chronic obstructive pulmonary disease (COPD)."
+    keywords: ["asthma", "pneumonia", "COPD", "bronchitis"]
+
+  "13":
+    name: "Diseases of the digestive system"
+    description: "Gastrointestinal conditions including gastritis, ulcers, liver diseases, and irritable bowel syndrome (IBS)."
+    keywords: ["stomach pain", "ulcer", "liver disease", "IBS"]
+
+  "14":
+    name: "Diseases of the skin"
+    description: "Dermatological conditions such as eczema, psoriasis, acne, dermatitis."
+    keywords: ["eczema", "psoriasis", "acne", "dermatitis"]
+
+  "15":
+    name: "Diseases of the musculoskeletal system or connective tissue"
+    description: "Conditions affecting bones, joints, and muscles. Examples: arthritis, osteoporosis, back pain."
+    keywords: ["arthritis", "osteoporosis", "back pain", "joint pain"]
+
+  "16":
+    name: "Diseases of the genitourinary system"
+    description: "Disorders of the kidneys, urinary tract, and reproductive organs. Examples: kidney stones, urinary infections."
+    keywords: ["kidney", "urinary tract", "UTI", "kidney stones"]
+
+  "17":
+    name: "Conditions related to sexual health"
+    description: "Sexually transmitted infections and dysfunctions. Examples: HIV, syphilis, erectile dysfunction."
+    keywords: ["STI", "HIV", "syphilis", "erectile dysfunction"]
+
+  "18":
+    name: "Pregnancy, childbirth or the puerperium"
+    description: "Maternal health conditions and complications during or after pregnancy."
+    keywords: ["pregnancy", "childbirth", "maternal health"]
+
+  "19":
+    name: "Certain conditions originating in the perinatal period"
+    description: "Conditions affecting newborns shortly before, during, or after birth."
+    keywords: ["newborn", "premature", "birth complication"]
+
+  "20":
+    name: "Developmental anomalies"
+    description: "Congenital malformations and birth defects, such as cleft lip, spina bifida, congenital heart disease."
+    keywords: ["congenital", "birth defect", "cleft lip", "spina bifida"]
+
+  "21":
+    name: "Symptoms, signs or clinical findings, not elsewhere classified"
+    description: "General symptoms not assigned to a specific disease. Examples: fever, fatigue, pain."
+    keywords: ["fever", "fatigue", "pain", "general symptom"]
+
+  "22":
+    name: "Injury, poisoning or certain other consequences of external causes"
+    description: "Trauma and toxic effects of substances. Examples: fractures, burns, poisoning."
+    keywords: ["injury", "fracture", "burn", "poisoning"]
+
+  "23":
+    name: "External causes of morbidity or mortality"
+    description: "Causes of injury or death due to external factors such as accidents, violence, or disasters."
+    keywords: ["accident", "violence", "disaster", "external cause"]
+
+  "24":
+    name: "Factors influencing health status or contact with health services"
+    description: "Non-disease factors that impact health, such as vaccination, lifestyle, or social circumstances."
+    keywords: ["vaccination", "checkup", "lifestyle", "health service"]
+
+  "25":
+    name: "Codes for special purposes"
+    description: "Reserved codes for emergency use or research classification."
+    keywords: ["special code", "research", "emergency"]
+
+  "26":
+    name: "Supplementary Chapter: Traditional Medicine Conditions"
+    description: "Conditions classified under traditional medicine systems, e.g., in Chinese or Ayurvedic medicine."
+    keywords: ["traditional medicine", "TCM", "Ayurveda"]
+
+  "V":
+    name: "Supplementary section for functioning assessment"
+    description: "Assessment of functional status, disability, and quality of life."
+    keywords: ["functioning", "disability", "quality of life"]
+
+  "X":
+    name: "Extension Codes"
+    description: "Extension codes used for additional detail in classification."
+    keywords: ["extension code", "classification", "modifier"]
+
+# ===============================
+# Model Configuration
+# ===============================
+model:
+  type: "bert-base-uncased"
+  num_labels: 28   # 26 + V + X
+
+# ===============================
+# Training Configuration
+# ===============================
+training:
+  batch_size: 16
+  learning_rate: 3e-5
+  epochs: 3
+  max_seq_length: 128
+
+# ===============================
+# Output Configuration
+# ===============================
+output:
+  save_dir: "outputs/"
+  log_dir: "logs/"
